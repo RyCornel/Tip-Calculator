@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,20 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uae-ci-apE" userLabel="Header View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uae-ci-apE" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="hQR-bq-hqs"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0o-6H-PwJ">
+                                <rect key="frame" x="15" y="194" width="384" height="205"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-Rj-EV8">
+                                <rect key="frame" x="15" y="423" width="384" height="205"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57J-p4-gWw">
+                                <rect key="frame" x="15" y="652" width="384" height="60"/>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OyZ-HJ-jAf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="tcOffWhite"/>
                         <constraints>
+                            <constraint firstItem="W0o-6H-PwJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="194" id="3Ub-0Z-bcJ"/>
+                            <constraint firstItem="57J-p4-gWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="87K-1d-KiE"/>
                             <constraint firstItem="uae-ci-apE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dir-7k-mEx"/>
+                            <constraint firstItem="QOV-Rj-EV8" firstAttribute="height" secondItem="W0o-6H-PwJ" secondAttribute="height" id="Oyd-P2-rjE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="57J-p4-gWw" secondAttribute="trailing" constant="15" id="P3E-OA-PjJ"/>
+                            <constraint firstItem="W0o-6H-PwJ" firstAttribute="top" secondItem="uae-ci-apE" secondAttribute="bottom" constant="24" id="QJT-fB-nmq"/>
                             <constraint firstItem="uae-ci-apE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T28-dJ-XA3"/>
+                            <constraint firstItem="W0o-6H-PwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="TEH-fh-qau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOV-Rj-EV8" secondAttribute="trailing" constant="15" id="VmQ-A1-GlA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="57J-p4-gWw" secondAttribute="bottom" constant="24" id="b0N-Z7-3Ua"/>
+                            <constraint firstItem="QOV-Rj-EV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="cGa-VV-4UI"/>
+                            <constraint firstItem="QOV-Rj-EV8" firstAttribute="top" secondItem="W0o-6H-PwJ" secondAttribute="bottom" constant="24" id="inm-xF-iuE"/>
                             <constraint firstItem="uae-ci-apE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jK2-Vo-Xf5"/>
+                            <constraint firstItem="57J-p4-gWw" firstAttribute="top" secondItem="QOV-Rj-EV8" secondAttribute="bottom" constant="24" id="sR1-tG-Y1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0o-6H-PwJ" secondAttribute="trailing" constant="15" id="wra-PH-seP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,8 +69,14 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="tcDarkBlue">
+            <color red="0.16899999976158142" green="0.17599999904632568" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="tcOffWhite">
             <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
