@@ -24,19 +24,23 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVx-eK-ns3">
                                         <rect key="frame" x="24" y="44" width="155.66666666666666" height="61"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="tcCharcoal"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ar-UM-f2S">
-                                        <rect key="frame" x="295" y="59" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Ar-UM-f2S">
+                                        <rect key="frame" x="302" y="59" width="51" height="31"/>
+                                        <color key="tintColor" name="tcSeafoamGreen"/>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="0Ar-UM-f2S" firstAttribute="centerY" secondItem="xVx-eK-ns3" secondAttribute="centerY" id="4fb-jb-hPz"/>
                                     <constraint firstAttribute="bottom" secondItem="xVx-eK-ns3" secondAttribute="bottom" id="6b7-SR-4hY"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Ar-UM-f2S" secondAttribute="trailing" constant="24" id="BIi-ky-CAi"/>
                                     <constraint firstItem="xVx-eK-ns3" firstAttribute="centerY" secondItem="uae-ci-apE" secondAttribute="centerYWithinMargins" id="Kfu-D9-Y9U"/>
+                                    <constraint firstItem="0Ar-UM-f2S" firstAttribute="centerY" secondItem="xVx-eK-ns3" secondAttribute="centerY" id="V70-Mf-M6e"/>
                                     <constraint firstAttribute="width" constant="375" id="hQR-bq-hqs"/>
+                                    <constraint firstItem="0Ar-UM-f2S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVx-eK-ns3" secondAttribute="trailing" constant="20" id="hZV-AU-7Mj"/>
                                     <constraint firstItem="xVx-eK-ns3" firstAttribute="leading" secondItem="uae-ci-apE" secondAttribute="leading" constant="24" id="kQF-z8-rzs"/>
                                 </constraints>
                             </view>
@@ -84,11 +88,17 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="tcCharcoal">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="tcDarkBlue">
             <color red="0.16899999976158142" green="0.17599999904632568" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tcOffWhite">
             <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcSeafoamGreen">
+            <color red="0.34900000691413879" green="0.85500001907348633" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
