@@ -15,6 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var themeSwitch: UISwitch!
     
     @IBAction func themeToggled(_ sender: UISwitch) {
+        if sender.isOn {
+            print("switch toggled on")
+        } else {
+            print("switch toggled off")
+        }
+        
     }
     // MARK: - View Lifecycle
     
