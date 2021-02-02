@@ -81,6 +81,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0o-6H-PwJ" secondAttribute="trailing" constant="15" id="wra-PH-seP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

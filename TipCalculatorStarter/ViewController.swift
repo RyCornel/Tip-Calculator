@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var headerView: UIView!
+    
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
