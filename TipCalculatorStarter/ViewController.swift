@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var themeSwitch: UISwitch!
     
+    @IBAction func themeToggled(_ sender: UISwitch) {
+    }
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {

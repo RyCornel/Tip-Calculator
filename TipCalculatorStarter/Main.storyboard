@@ -30,6 +30,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Ar-UM-f2S">
                                         <rect key="frame" x="302" y="59" width="51" height="31"/>
                                         <color key="tintColor" name="tcSeafoamGreen"/>
+                                        <connections>
+                                            <action selector="themeToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="AAj-LK-Ljp"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,6 +86,8 @@
                     </view>
                     <connections>
                         <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
+                        <outlet property="themeSwitch" destination="0Ar-UM-f2S" id="HPh-1G-Wwn"/>
+                        <outlet property="titleLabel" destination="xVx-eK-ns3" id="B7J-ib-5L1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
