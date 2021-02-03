@@ -54,32 +54,38 @@
                                         <rect key="frame" x="22" y="49" width="301" height="128"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="9fa-Ye-buq" userLabel="Bill Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="34"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-Sx-7M4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-mm-SNO">
-                                                        <rect key="frame" x="119.33333333333334" y="0.0" width="32" height="34"/>
+                                                        <rect key="frame" x="183" y="0.0" width="118" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="118" id="MPQ-Ki-GQO"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="1Sa-Jm-Zvg" userLabel="Tip Stack View">
-                                                <rect key="frame" x="0.0" y="97" width="250.66666666666666" height="31"/>
+                                                <rect key="frame" x="0.0" y="97" width="301" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-32-oTU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-b6-Rpq">
-                                                        <rect key="frame" x="119.66666666666666" y="0.0" width="131" height="32"/>
+                                                        <rect key="frame" x="128" y="0.0" width="173" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="173" id="1gL-EE-gKh"/>
+                                                        </constraints>
                                                         <segments>
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
@@ -88,6 +94,10 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9fa-Ye-buq" firstAttribute="width" secondItem="dfF-Xh-M6I" secondAttribute="width" id="dMt-Nw-pXX"/>
+                                            <constraint firstItem="1Sa-Jm-Zvg" firstAttribute="width" secondItem="dfF-Xh-M6I" secondAttribute="width" id="yCA-Fe-vOP"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="tcDarkBlue"/>
