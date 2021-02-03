@@ -47,7 +47,7 @@
                                     <constraint firstItem="xVx-eK-ns3" firstAttribute="leading" secondItem="uae-ci-apE" secondAttribute="leading" constant="24" id="kQF-z8-rzs"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0o-6H-PwJ" userLabel="Top Card View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0o-6H-PwJ" userLabel="Input Card View">
                                 <rect key="frame" x="15" y="194" width="345" height="226"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-Xh-M6I" userLabel="Top Stack View">
@@ -76,10 +76,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="1Sa-Jm-Zvg" userLabel="Tip Stack View">
                                                 <rect key="frame" x="0.0" y="69" width="301" height="31"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-32-oTU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-32-oTU">
                                                         <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" name="tcWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-b6-Rpq">
@@ -88,9 +88,11 @@
                                                             <constraint firstAttribute="width" constant="173" id="1gL-EE-gKh"/>
                                                         </constraints>
                                                         <segments>
-                                                            <segment title="First"/>
-                                                            <segment title="Second"/>
+                                                            <segment title="15%"/>
+                                                            <segment title="18%"/>
+                                                            <segment title="20%"/>
                                                         </segments>
+                                                        <color key="selectedSegmentTintColor" name="tcHotPink"/>
                                                     </segmentedControl>
                                                 </subviews>
                                             </stackView>
@@ -143,6 +145,7 @@
                     </view>
                     <connections>
                         <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
+                        <outlet property="inputCardView" destination="W0o-6H-PwJ" id="sgr-DS-8kY"/>
                         <outlet property="themeSwitch" destination="0Ar-UM-f2S" id="HPh-1G-Wwn"/>
                         <outlet property="titleLabel" destination="xVx-eK-ns3" id="B7J-ib-5L1"/>
                     </connections>

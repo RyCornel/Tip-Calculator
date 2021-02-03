@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var themeSwitch: UISwitch!
     
+    @IBOutlet weak var inputCardView: UIView!
+    
+    // MARK: - View Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     @IBAction func themeToggled(_ sender: UISwitch) {
         if sender.isOn {
             print("switch toggled on")
@@ -21,11 +29,6 @@ class ViewController: UIViewController {
             print("switch toggled off")
         }
         
-    }
-    // MARK: - View Lifecycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }
 
