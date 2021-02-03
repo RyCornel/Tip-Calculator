@@ -93,6 +93,9 @@
                                                             <segment title="20%"/>
                                                         </segments>
                                                         <color key="selectedSegmentTintColor" name="tcHotPink"/>
+                                                        <connections>
+                                                            <action selector="tipPercentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ubt-7n-csG"/>
+                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                             </stackView>
@@ -144,9 +147,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="billAmountTextField" destination="wHO-mm-SNO" id="vQh-3c-Cfr"/>
                         <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
                         <outlet property="inputCardView" destination="W0o-6H-PwJ" id="sgr-DS-8kY"/>
                         <outlet property="themeSwitch" destination="0Ar-UM-f2S" id="HPh-1G-Wwn"/>
+                        <outlet property="tipPercentSegmentedControl" destination="0W3-b6-Rpq" id="D8z-vA-GRX"/>
                         <outlet property="titleLabel" destination="xVx-eK-ns3" id="B7J-ib-5L1"/>
                     </connections>
                 </viewController>
