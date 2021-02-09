@@ -84,7 +84,10 @@ class ViewController: UIViewController {
     }
     
     func setupViews() {
-        
+        headerView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        headerView.layer.shadowOpacity = 0.05
+        headerView.layer.shadowColor = UIColor.black.cgColor
+        headerView.layer.shadowRadius = 35
     }
     
     // MARK: - View Lifecycle
