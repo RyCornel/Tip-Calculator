@@ -18,7 +18,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var billAmountTextField: UITextField!
     @IBOutlet weak var tipPercentSegmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var outputCardView: UIView!
+    @IBOutlet weak var tipAmountTitleLabel: UILabel!
+    @IBOutlet weak var tipAmountLabel: UILabel!
+    @IBOutlet weak var totalAmountTitleLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    
     // MARK: - View Lifecycle
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
