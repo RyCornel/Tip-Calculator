@@ -88,6 +88,9 @@ class ViewController: UIViewController {
         headerView.layer.shadowOpacity = 0.05
         headerView.layer.shadowColor = UIColor.black.cgColor
         headerView.layer.shadowRadius = 35
+        
+        inputCardView.layer.cornerRadius = 8
+        inputCardView.layer.masksToBounds = true
     }
     
     // MARK: - View Lifecycle
