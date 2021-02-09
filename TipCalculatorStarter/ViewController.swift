@@ -102,6 +102,10 @@ class ViewController: UIViewController {
         resetButton.layer.masksToBounds = true
     }
     
+    func setTheme(isDark: Bool) {
+        
+    }
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
