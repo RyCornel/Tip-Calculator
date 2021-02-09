@@ -130,6 +130,10 @@ class ViewController: UIViewController {
         totalAmountLabel.textColor = theme.outputTextColor
 
         resetButton.backgroundColor = theme.secondaryColor
+        
+        
+        isDefaultStatusBar = theme.isDefaultStatusBar
+            setNeedsStatusBarAppearanceUpdate()
 
     }
     
