@@ -150,11 +150,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func themeToggled(_ sender: UISwitch) {
-        if sender.isOn {
-            print("switch toggled on")
-        } else {
-            print("switch toggled off")
-        }
+        setTheme(isDark: sender.isOn)
         
     }
     
