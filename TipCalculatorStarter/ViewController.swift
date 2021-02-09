@@ -142,6 +142,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupViews()
+        setTheme(isDark: false)
         
         billAmountTextField.calculateButtonAction = {
             self.calculate()
