@@ -34,10 +34,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         billAmountTextField.calculateButtonAction = {
-            guard let billAmountText = self.billAmountTextField.text
+            guard let billAmountText = self.billAmountTextField.text,
+                  let billAmount = Double(billAmountText)
+            
             else { return }
             
-            print("Bill Amount: \(billAmountText)")
+            let roundedBillAmount = (100 * billAmount).rounded() / 100
+            
+            let tipPercent = 0.15
+            let tipAmount = roundedBillAmount * tipPercent
+            let roundedTipAmount = (100 * tipAmount).rounded() / 100
+                
+            print("Bill Amount: \(roundedBillAmount)")
+            print("Tip Amount: \(roundedTipAmount)")
         }
     }
     
