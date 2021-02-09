@@ -27,13 +27,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resetButton: UIButton!
     
-    // MARK: - View Lifecycle
-   
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        billAmountTextField.calculateButtonAction = {
+    func calculate() {
             
             // Dismisses keyboard
             if self.billAmountTextField.isFirstResponder {
@@ -62,7 +57,16 @@ class ViewController: UIViewController {
             print("Tip Amount: \(roundedTipAmount)")
             print("Total Amount: \(totalAmount)")
             
+    }
+    
+    // MARK: - View Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        billAmountTextField.calculateButtonAction = {
+            self.calculate()
         }
+        
     }
     
     @IBAction func themeToggled(_ sender: UISwitch) {
