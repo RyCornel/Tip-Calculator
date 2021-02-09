@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
+        print("reset button tapped")
     }
     
 }

@@ -45,25 +45,25 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5ZQ-Hm-SEp" userLabel="Outer Stack View">
-                                <rect key="frame" x="22" y="158.99999999999997" width="331" height="494.33333333333326"/>
+                                <rect key="frame" x="22" y="158.00000000000003" width="331" height="494.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0o-6H-PwJ" userLabel="Input Card View">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="226"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="227.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-Xh-M6I" userLabel="Top Stack View">
-                                                <rect key="frame" x="22" y="63" width="287" height="100"/>
+                                                <rect key="frame" x="22" y="62.999999999999993" width="287" height="101.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="9fa-Ye-buq" userLabel="Bill Stack View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="287" height="35.333333333333336"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-Sx-7M4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="136" height="35.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="textColor" name="tcWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-mm-SNO">
-                                                                <rect key="frame" x="169" y="0.0" width="118" height="34"/>
+                                                                <rect key="frame" x="169" y="0.0" width="118" height="35.333333333333336"/>
                                                                 <color key="tintColor" name="tcHotPink"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="118" id="NmW-SW-3Al"/>
@@ -74,7 +74,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="1Sa-Jm-Zvg" userLabel="Tip Stack View">
-                                                        <rect key="frame" x="0.0" y="69" width="287" height="31"/>
+                                                        <rect key="frame" x="0.0" y="70.333333333333314" width="287" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-32-oTU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
@@ -102,6 +102,7 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="9fa-Ye-buq" firstAttribute="trailing" secondItem="1Sa-Jm-Zvg" secondAttribute="trailing" id="L9c-BM-501"/>
+                                                    <constraint firstItem="1Sa-Jm-Zvg" firstAttribute="top" secondItem="dfF-Xh-M6I" secondAttribute="top" constant="70.333333333333314" id="Zuj-ja-UEG"/>
                                                     <constraint firstItem="9fa-Ye-buq" firstAttribute="trailing" secondItem="dfF-Xh-M6I" secondAttribute="trailingMargin" id="cut-QY-NYr"/>
                                                 </constraints>
                                             </stackView>
@@ -112,16 +113,17 @@
                                             <constraint firstItem="dfF-Xh-M6I" firstAttribute="top" secondItem="W0o-6H-PwJ" secondAttribute="top" constant="63" id="Yte-d6-Ag7"/>
                                             <constraint firstItem="dfF-Xh-M6I" firstAttribute="centerX" secondItem="W0o-6H-PwJ" secondAttribute="centerX" id="gfO-1m-d3P"/>
                                             <constraint firstItem="dfF-Xh-M6I" firstAttribute="centerY" secondItem="W0o-6H-PwJ" secondAttribute="centerY" id="uLe-mm-YZa"/>
+                                            <constraint firstAttribute="width" secondItem="W0o-6H-PwJ" secondAttribute="height" multiplier="331:228" constant="1" id="zuc-0s-QE6"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-Rj-EV8" userLabel="Output Card View">
-                                        <rect key="frame" x="0.0" y="261" width="331" height="233.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="262.33333333333331" width="331" height="232.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-rv-i13" userLabel="Inner Top Stack View">
-                                                <rect key="frame" x="58" y="64" width="226" height="24"/>
+                                                <rect key="frame" x="58" y="64" width="226" height="23"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-J1-CJJ" userLabel="Tip Amount Title">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="23"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="110" id="39M-o4-ho5"/>
                                                         </constraints>
@@ -130,7 +132,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VI-de-udr" userLabel="Tip Amount">
-                                                        <rect key="frame" x="174" y="0.0" width="52" height="24"/>
+                                                        <rect key="frame" x="174" y="0.0" width="52" height="23"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" name="tcBlack"/>
                                                         <nil key="highlightedColor"/>
@@ -138,7 +140,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-6V-LSC" userLabel="Inner Bottom Stack View">
-                                                <rect key="frame" x="58" y="148.66666666666663" width="226" height="24"/>
+                                                <rect key="frame" x="58" y="147.66666666666669" width="226" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7C-t4-eCd" userLabel="Total Amount Title">
                                                         <rect key="frame" x="0.0" y="0.0" width="110" height="24"/>
@@ -156,11 +158,15 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="t7C-t4-eCd" firstAttribute="baseline" secondItem="Zcm-M1-Pxn" secondAttribute="firstBaseline" id="Lya-Rp-xJV"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" name="tcWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="cEh-6V-LSC" secondAttribute="bottom" constant="60.666666666666657" id="Qdf-lf-lVU"/>
+                                            <constraint firstAttribute="width" secondItem="QOV-Rj-EV8" secondAttribute="height" multiplier="331:233" constant="1" id="XYi-8a-iXl"/>
                                             <constraint firstItem="pAW-rv-i13" firstAttribute="leading" secondItem="cEh-6V-LSC" secondAttribute="leading" id="XnB-ql-e8k"/>
                                             <constraint firstItem="pAW-rv-i13" firstAttribute="top" secondItem="QOV-Rj-EV8" secondAttribute="top" constant="64" id="e7A-qk-Ysl"/>
                                             <constraint firstItem="cEh-6V-LSC" firstAttribute="top" secondItem="pAW-rv-i13" secondAttribute="bottom" constant="60.666666666666671" id="kMZ-JL-nfo"/>
@@ -174,14 +180,17 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57J-p4-gWw">
-                                <rect key="frame" x="15" y="707.33333333333337" width="345" height="46.666666666666629"/>
+                                <rect key="frame" x="15" y="706.66666666666663" width="345" height="46"/>
                                 <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="57J-p4-gWw" secondAttribute="height" multiplier="15:2" id="8M3-O5-sip"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="RESET">
                                     <color key="titleColor" name="tcWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ork-o9-10C"/>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHm-el-ufE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,6 +205,7 @@
                             <constraint firstItem="uae-ci-apE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nVa-j1-cD5"/>
                             <constraint firstItem="57J-p4-gWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ozp-zl-cRK"/>
                             <constraint firstItem="57J-p4-gWw" firstAttribute="top" secondItem="5ZQ-Hm-SEp" secondAttribute="bottom" constant="54" id="p2i-l8-YPk"/>
+                            <constraint firstItem="5ZQ-Hm-SEp" firstAttribute="top" secondItem="uae-ci-apE" secondAttribute="bottom" constant="52.999999999999972" id="rr3-Nb-7gJ"/>
                             <constraint firstItem="uae-ci-apE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vGn-wj-dUS"/>
                             <constraint firstItem="5ZQ-Hm-SEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="vyq-zt-LTE"/>
                         </constraints>
@@ -205,7 +215,7 @@
                         <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
                         <outlet property="inputCardView" destination="W0o-6H-PwJ" id="sgr-DS-8kY"/>
                         <outlet property="outputCardView" destination="QOV-Rj-EV8" id="QIg-dT-A0r"/>
-                        <outlet property="resetButton" destination="57J-p4-gWw" id="k37-2c-poL"/>
+                        <outlet property="resetButton" destination="57J-p4-gWw" id="5xO-9i-644"/>
                         <outlet property="themeSwitch" destination="0Ar-UM-f2S" id="HPh-1G-Wwn"/>
                         <outlet property="tipAmountLabel" destination="1VI-de-udr" id="L7r-Ix-trd"/>
                         <outlet property="tipAmountTitleLabel" destination="Kwh-J1-CJJ" id="Edz-NY-VQM"/>
