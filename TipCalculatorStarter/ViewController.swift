@@ -79,6 +79,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tipPercentChanged(_ sender: UISegmentedControl) {
+        calculate()
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
