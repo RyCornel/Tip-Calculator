@@ -83,9 +83,15 @@ class ViewController: UIViewController {
         
     }
     
+    func setupViews() {
+        
+    }
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupViews()
         
         billAmountTextField.calculateButtonAction = {
             self.calculate()
