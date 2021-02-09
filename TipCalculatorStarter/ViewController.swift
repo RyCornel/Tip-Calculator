@@ -38,7 +38,10 @@ class ViewController: UIViewController {
             guard let billAmountText = self.billAmountTextField.text,
                   let billAmount = Double(billAmountText)
             
-            else { return }
+            else  { clear()
+                return
+                
+            }
             
             let roundedBillAmount = (100 * billAmount).rounded() / 100
             
@@ -70,6 +73,16 @@ class ViewController: UIViewController {
             
     }
     
+    func clear() {
+        
+        billAmountTextField.text = nil
+        tipPercentSegmentedControl.selectedSegmentIndex = 0
+        tipAmountLabel.text = "$0.00"
+        totalAmountLabel.text = "$0.00"
+        
+        
+    }
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +107,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
+        clear()
+        
         print("reset button tapped")
     }
     
