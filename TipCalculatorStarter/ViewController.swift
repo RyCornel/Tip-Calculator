@@ -91,8 +91,12 @@ class ViewController: UIViewController {
         
         inputCardView.layer.cornerRadius = 8
         inputCardView.layer.masksToBounds = true
+        
         outputCardView.layer.cornerRadius = 8
         outputCardView.layer.masksToBounds = true
+        
+        resetButton.layer.cornerRadius = 8
+        resetButton.layer.masksToBounds = true
     }
     
     // MARK: - View Lifecycle
