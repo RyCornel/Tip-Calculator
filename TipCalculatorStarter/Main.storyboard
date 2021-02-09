@@ -117,7 +117,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-Rj-EV8" userLabel="Output Card View">
                                         <rect key="frame" x="0.0" y="261" width="331" height="233.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-rv-i13" userLabel="Inner Top Stack View">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-rv-i13" userLabel="Inner Top Stack View">
                                                 <rect key="frame" x="58" y="64" width="226" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-J1-CJJ" userLabel="Tip Amount Title">
@@ -137,7 +137,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-6V-LSC" userLabel="Inner Bottom Stack View">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-6V-LSC" userLabel="Inner Bottom Stack View">
                                                 <rect key="frame" x="58" y="148.66666666666663" width="226" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7C-t4-eCd" userLabel="Total Amount Title">
@@ -164,6 +164,7 @@
                                             <constraint firstItem="pAW-rv-i13" firstAttribute="leading" secondItem="cEh-6V-LSC" secondAttribute="leading" id="XnB-ql-e8k"/>
                                             <constraint firstItem="pAW-rv-i13" firstAttribute="top" secondItem="QOV-Rj-EV8" secondAttribute="top" constant="64" id="e7A-qk-Ysl"/>
                                             <constraint firstItem="cEh-6V-LSC" firstAttribute="top" secondItem="pAW-rv-i13" secondAttribute="bottom" constant="60.666666666666671" id="kMZ-JL-nfo"/>
+                                            <constraint firstItem="pAW-rv-i13" firstAttribute="leading" secondItem="QOV-Rj-EV8" secondAttribute="leading" constant="58" id="otg-hD-E6a"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -172,10 +173,16 @@
                                     <constraint firstItem="W0o-6H-PwJ" firstAttribute="width" secondItem="5ZQ-Hm-SEp" secondAttribute="width" id="wkH-sP-JpP"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57J-p4-gWw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57J-p4-gWw">
                                 <rect key="frame" x="15" y="707.33333333333337" width="345" height="46.666666666666629"/>
                                 <color key="backgroundColor" name="tcDarkBlue"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" name="tcWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ork-o9-10C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -198,6 +205,7 @@
                         <outlet property="headerView" destination="uae-ci-apE" id="6Kc-y4-KdW"/>
                         <outlet property="inputCardView" destination="W0o-6H-PwJ" id="sgr-DS-8kY"/>
                         <outlet property="outputCardView" destination="QOV-Rj-EV8" id="QIg-dT-A0r"/>
+                        <outlet property="resetButton" destination="57J-p4-gWw" id="k37-2c-poL"/>
                         <outlet property="themeSwitch" destination="0Ar-UM-f2S" id="HPh-1G-Wwn"/>
                         <outlet property="tipAmountLabel" destination="1VI-de-udr" id="L7r-Ix-trd"/>
                         <outlet property="tipAmountTitleLabel" destination="Kwh-J1-CJJ" id="Edz-NY-VQM"/>
