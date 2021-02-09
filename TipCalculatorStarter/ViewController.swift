@@ -27,6 +27,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resetButton: UIButton!
     
+    var isDefaultStatusBar = true
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+            return isDefaultStatusBar ? .default : .lightContent
+        }
     
     func calculate() {
             
